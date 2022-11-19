@@ -1,0 +1,27 @@
+{
+  "name": "icp_website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@lucky-canvas/react": "^0.1.13",
+    "@react-spring/web": "^9.5.5",
+    "framer-motion": "^7.6.7",
+    "lodash": "^4.17.21",
+    "next": "13.0.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-reveal": "^1.2.2",
+    "react-transition-group": "^4.4.5",
+    "swiper": "^8.4.4"
+  },
+  "devDependencies": {
+    "eslint": "8.27.0",
+    "eslint-config-next": "13.0.3"
+  }
+}

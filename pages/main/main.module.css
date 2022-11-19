@@ -1,0 +1,221 @@
+.page {
+    background-color: #eceef4;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .group {
+    margin-top: -422px;
+    overflow-x: hidden;
+    height: 1421px;
+    position: relative;
+   
+  }
+  .image {
+    filter: drop-shadow(0px 3px 3px #00000029);
+    width: 439.000028px;
+    height: 693.000052px;
+    position: absolute;
+    left: -60.5px;
+    top: 0;
+  }
+  .image-wrapper {
+    padding: 218px 0 126px;
+    filter: drop-shadow(0px 3px 3px #00000029);
+    background-image: url('https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/63324b315a7e3f0310665513/6373beb18d7d66001180ae52/16685301271575215530.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 701px;
+    position: absolute;
+    right: -350.5px;
+    top: 203.5px;
+  }
+  .image_2 {
+    margin-left: -6px;
+    filter: drop-shadow(0px 3px 3px #00000029);
+    width: 357px;
+    height: 460px;
+  }
+  .image_3 {
+    width: 271px;
+    height: 275px;
+    position: absolute;
+    left: -87px;
+    bottom: 320px;
+  }
+  .image_4 {
+    filter: drop-shadow(0px 3px 3px #00000029);
+    width: 606.850072px;
+    height: 650.999984px;
+    position: absolute;
+    left: -179px;
+    right: 0;
+    top: 380px;
+  }
+  .image_5 {
+    filter: drop-shadow(0px 3px 3px #00000029);
+    width: 452.999908px;
+    height: 528.0000600000001px;
+    position: absolute;
+    right: -184px;
+    bottom: 140.5px;
+  }
+  .image_6 {
+    width: 470.000068px;
+    height: 474.000156px;
+    position: absolute;
+    left: -51px;
+    right: 9px;
+    bottom: 358px;
+  }
+  .image_7 {
+    filter: drop-shadow(0px 3px 3px #00000029);
+    width: 349px;
+    height: 352px;
+    position: absolute;
+    right: 9.5px;
+    bottom: 79.5px;
+  }
+  .section_2 {
+    filter: drop-shadow(0px 3px 3px #00000029);
+    background-color: #00000000;
+    width: 349.5px;
+    height: 352px;
+    position: absolute;
+    right: 0;
+    top: 1069px;
+  }
+  .image_8 {
+    width: 345px;
+    height: 359px;
+    position: absolute;
+    right: 0;
+    top: 489px;
+  }
+  .image_9 {
+    filter: drop-shadow(0px 3px 3px #00000029);
+    width: 416.000164px;
+    height: 517.9998400000001px;
+    position: absolute;
+    right: -112.5px;
+    bottom: 244.5px;
+  }
+  .image-wrapper_2 {
+    padding: 36px 0 312px;
+    filter: drop-shadow(0px 3px 3px #00000029);
+    background-image: url('https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/63324b315a7e3f0310665513/6373beb18d7d66001180ae52/16685301266723610583.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 286px;
+    position: absolute;
+    left: 16px;
+    top: 825.5px;
+  }
+  .image_10 {
+    margin-right: 63px;
+    width: 50px;
+    height: 62px;
+    opacity: 1;
+    align-self: auto;
+  }
+  .text {
+    color: #ffffff;
+    font-size: 40px;
+    font-family: Arial-Black;
+    font-weight: 900;
+    line-height: 36.5px;
+    position: absolute;
+    left: 175px;
+    bottom: 576px;
+  }
+  .group_2 {
+    margin-top: 120px;
+  text-align: center;
+  }
+  .space-y-8 > *:not(:first-child) {
+    margin-top: 8px;
+  }
+  .text_2 {
+    align-self: center;
+    color: #fd9160;
+    font-size: 25px;
+    font-family: Arial-Black;
+    font-weight: 900;
+    line-height: 19px;
+  }
+  .equal-division-item {
+    margin-top: 6px;
+    flex: 1 1 84px;
+    width: 83px;
+    height: 100px;
+  }
+  .text_3 {
+    margin-top: 94px;
+    align-self: center;
+    color: #6e6767;
+    font-size: 28px;
+    font-family: DNPShueiMGoStd-B;
+    line-height: 26px;
+  }
+  .font_1 {
+    font-size: 20px;
+    font-family: DNPShueiMGoStd-L;
+    line-height: 24px;
+    color: #6e6767;
+  }
+  .text_4 {
+    margin-top: 70px;
+    align-self: center;
+  }
+  .text_5 {
+    margin-top: 37px;
+    align-self: center;
+  }
+  .text_6 {
+    margin-top: 37px;
+    align-self: center;
+  }
+  .text_7 {
+    margin-top: 37px;
+    align-self: center;
+  }
+  .group_3 {
+    margin-top: 37px;
+    padding-left: 75px;
+    padding-right: 73px;
+  }
+  .space-y-11 > *:not(:first-child) {
+    margin-top: 11px;
+  }
+  .text_8 {
+    margin-left: 29px;
+  }
+  .group_4 {
+    padding: 26px 0 220px;
+    position: relative;
+  }
+  .section_3 {
+    background-color: #00000000;
+    width: 155px;
+    height: 270px;
+    position: absolute;
+    right: 51px;
+    top: 0;
+  }
+  .group_5 {
+    margin-top: 365px;
+  }
+  .space-y-26 > *:not(:first-child) {
+    margin-top: 26px;
+  }
+  .font_2 {
+    font-size: 20px;
+    font-family: DNPShueiMGoStd-L;
+    line-height: 24px;
+    color: #707070;
+  }
+  .text_10 {
+    text-transform: uppercase;
+  }
+  
