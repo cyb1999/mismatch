@@ -14,8 +14,8 @@ const Main = () => {
             <Header />
             <div className={`flex-col ${styles['page']}`}>
                 <div className={`flex-col ${styles['group_2']} ${styles['space-y-8']}`}>
-                    <Fade left cascade><span className={`${styles['text_2']}`}>Hello.</span></Fade>
-                    <Fade top cascade>
+                    <Fade right cascade >
+                        <span className={`${styles['text_2']}`}>Hello.</span>
                         <div className={`flex-row`}>
                             <img
                                 className={`${styles['equal-division-item']}`}
@@ -32,19 +32,14 @@ const Main = () => {
                         </div>
                     </Fade>
                 </div>
-                <Fade top cascade>
+                <Fade right cascade>
                     <span className={`${styles['text_3']}`}>ミスマッチ研究会ヘようこそ</span>
                     <span className={`${styles['font_1']} ${styles['text_4']}`}>ミスマッチ研究会改め</span>
                     <span className={`${styles['font_1']} ${styles['text_5']}`}>“ミス研”とは</span>
                     <span className={`${styles['font_1']} ${styles['text_6']}`}>一見ミスマッチな食材を</span>
                     <span className={`${styles['font_1']} ${styles['text_7']}`}>ランダムで合成し</span>
-                    <div className={`flex-col ${styles['group_3']} ${styles['space-y-11']}`}>
-                        <span className={`${styles['font_1']} ${styles['text_8']}`}>マッチする組み合わせを</span>
-                        <div className={`flex-col items-center ${styles['group_4']}`}>
-                            <span className={`${styles['font_1']}`}>日夜研究しているサークルです</span>
-                            <div className={`${styles['section_3']}`}></div>
-                        </div>
-                    </div>
+                    <span className={`${styles['font_1']} ${styles['text_5']}`}>マッチする組み合わせを</span>
+                    <span className={`${styles['font_1']} ${styles['text_5']}`}>日夜研究しているサークルです</span>
                     <div className={`flex-col items-center ${styles['group_5']} ${styles['space-y-26']}`}>
                         <span className={`${styles['font_2']} ${styles['text_10']}`}>さあ、あなたも</span>
                         <span className={`${styles['font_2']} ${styles['text_10']}`}>合成してみましょう</span>

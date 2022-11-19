@@ -145,10 +145,10 @@
     line-height: 19px;
   }
   .equal-division-item {
-    margin-top: 6px;
     flex: 1 1 84px;
     width: 83px;
     height: 100px;
+    margin: 20px 10px 0 ;
   }
   .text_3 {
     margin-top: 94px;
