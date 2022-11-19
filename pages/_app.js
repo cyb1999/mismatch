@@ -6,11 +6,10 @@ import Layout from '../common/Layout'
 function MyApp({ Component, pageProps }) {
   const [state, dispatch] = useReducer(reducer, Initialized)
 
-  return <Layout>
-    <GlobalContext.Provider value={{ state, getDispatch: dispatch }}>
-      <Component {...pageProps} />
-    </GlobalContext.Provider>
-  </Layout>
+  return <GlobalContext.Provider value={{ state, getDispatch: dispatch }}>
+    <Component {...pageProps} />
+  </GlobalContext.Provider>
+
 }
 
 export default MyApp
