@@ -121,7 +121,7 @@ const MySlotMachine = () => {
     }, 2000)
     const onEnd = (item) => {
         console.log(item)
-        // alert(`今日のごはんはお${item.text}!`)
+        alert(`今日のごはんはお${item.text}!`)
         setFoodText(item.text)
         if (item.id === 3) {
             alert('鴨は一羽だけ')
