@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 const Header = () => {
 
     return (
-        <Fade right>
+        <Fade top>
             <div className={`${styles['image-wrapper']}`}>
                 <img
                     className={`${styles['image']}`}

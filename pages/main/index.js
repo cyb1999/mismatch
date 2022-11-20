@@ -14,7 +14,7 @@ const Main = () => {
             <Header />
             <div className={`flex-col ${styles['page']}`}>
                 <div className={`flex-col ${styles['group_2']} ${styles['space-y-8']}`}>
-                    <Fade right cascade >
+                    <Fade right  >
                         <span className={`${styles['text_2']}`}>Hello.</span>
                         <div className={`flex-row`}>
                             <img
