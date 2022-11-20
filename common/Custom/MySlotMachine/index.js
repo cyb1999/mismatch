@@ -146,7 +146,7 @@ const MySlotMachine = () => {
                         textAlign: 'center',
                         cursor: `${Switch ? 'pointer' : 'wait'}`,
                     }}
-                        onClick={StopGame} >Stop</button>
+                        onClick={debStopGame} >Stop</button>
                 </div>
             </Fade>
         </div>
