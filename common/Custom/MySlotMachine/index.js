@@ -2,10 +2,11 @@ import { useState, useEffect, useRef } from 'react'
 import _debounce from "lodash/debounce";
 import { SlotMachine } from '@lucky-canvas/react'
 import Fade from 'react-reveal/Fade';
-
+import styles from './MySlotMachine.module.css'
 const MySlotMachine = () => {
     const [Switch, setSwitch] = useState(true)
-    const [Disabled, setDisabled] = useState(true)
+
+    const [FoodText, setFoodText] = useState('? ? ?')
     const myLucky = useRef()
     const defaultConfig = {
         rowSpacing: '50px'
@@ -27,32 +28,34 @@ const MySlotMachine = () => {
         ]
     const [prizes] = useState([
         {
-            text: '爱心',
+            text: '寿司',
             imgs: [{
-                text: '爱心',
                 id: 1,
                 width: '100%',
-                src: '/1.png',
+                src: '/Food/sushi.png',
+                text: '寿司',
             }],
 
         },
 
         {
-            text: '太阳',
+            text: 'ピザ',
             imgs: [{
                 id: 2,
                 width: '100%',
-                src: '/2.png',
+                src: '/Food/pizza.png',
+                text: 'ピザ',
             }],
 
         },
         {
-            borderRadius: '60px',
-            text: '杯子',
+
+            text: 'ダック',
             imgs: [{
                 id: 3,
                 width: '100%',
-                src: '/3.png',
+                src: '/Food/duck.png',
+                text: 'ダック',
             }],
 
 
@@ -68,6 +71,10 @@ const MySlotMachine = () => {
         [2, 0, 1],
         [2, 1, 0],
     ]
+    const Pizza = [0, 1, 2];
+    const Photo = [0, 2, 1]
+
+
     useEffect(() => {
         if (Switch) {
             var timer = setInterval(() => {
@@ -89,7 +96,7 @@ const MySlotMachine = () => {
             //     clearTimeout(Timer);
             // }
             const index = res[Math.random() * 6 >> 0]
-            myLucky?.current?.stop(index)
+            myLucky?.current?.stop(index[0])
             if (index ===
                 [0, 1, 2] || [0, 1, 2]
                 [0, 2, 1] ||
@@ -112,6 +119,15 @@ const MySlotMachine = () => {
         console.log(e)
         StopGame()
     }, 2000)
+    const onEnd = (item) => {
+        console.log(item)
+        // alert(`今日のごはんはお${item.text}!`)
+        setFoodText(item.text)
+        if (item.id === 3) {
+            alert('鴨は一羽だけ')
+        }
+
+    }
     return (
         <div style={{ minHeight: '100vh' }}>
             <div
@@ -126,27 +142,18 @@ const MySlotMachine = () => {
                         prizes={prizes}
                         slots={slots}
                         defaultConfig={defaultConfig}
-                        onEnd={prize => {
-                            console.log(prize);
-                        }} />
+                        onEnd={onEnd} />
                 </Fade>
             </div>
             <Fade top>
-                <div
-                    style=
-                    {{ display: 'flex', justifyContent: 'center', alignItem: 'center' }}>
-                    <button style={{
-                        transition: 'all 0.5s',
-                        width: '150px', height: '40px',
-                        borderRadius: '20px',
-                        border: 'none', fontSize: '20px',
-                        backgroundColor: `${Switch ? 'red' : '#2d93d2'}`,
-                        color: '#fff',
-                        fontWeight: 'bold',
-                        textAlign: 'center',
-                        cursor: `${Switch ? 'pointer' : 'wait'}`,
-                    }}
-                        onClick={debStopGame} >Stop</button>
+                <div className={`${styles['FoodText']}`}>
+                    <span>選択された: {FoodText}</span>
+                </div>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItem: 'center' }}>
+
+                    <button
+                        className={Switch ? `${styles['btn']}` : `${styles['btn_active']}`}
+                        onClick={StopGame} >{Switch ? 'Stop' : 'Loading' ? FoodText : ''}</button>
                 </div>
             </Fade>
         </div>

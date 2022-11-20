@@ -64,7 +64,7 @@ background-position: center 0;
 background-repeat:repeat-y;
 transition: all ease-out}
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
@@ -72,4 +72,4 @@ transition: all ease-out}
     color: white;
     background: black;
   }
-}
+} */
